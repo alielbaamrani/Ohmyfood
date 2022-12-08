@@ -4,9 +4,14 @@
 /* Pages */
 
 @import "pages/accueil.scss";
+@import "pages/menu.scss";
 
 
 
 /* components */
+@import "components/animation.scss";
+@import "components/restaurant-card.scss";
 @import "components/navbar.scss";
+@import "components/footer.scss";
+@import "components/menu-btn.scss";
 
