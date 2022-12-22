@@ -1,17 +1,50 @@
 .menu-btn {
+  overflow: hidden;
   margin: 10px;
-  padding: 10px;
   display: flex;
-  justify-content: space-between;
   background-color: #fff;
   border-radius: 20px;
+  text-overflow: ellipsis;
+
+
+  .title-menu {
+    flex: 1;
+    padding: 10px;
+  }
   h3,
   p {
     margin: 0;
   }
 
   .prix {
-    padding-top: 23px;
+    display: flex;
+    font-weight: 700;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding: 10px;
   }
+  .menu-btn-check {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 4rem;
+    margin: 0rem -4rem 0rem 0rem;
+    background-color: $color-tertiaire;
+    transition:  1s;
+
+  }
+&:hover .menu-btn-check {
+  margin: 0rem 0rem 0rem 0rem;
+}
+.check {
+  font-size: 1.5rem;
+  color: #FFF;
+}
+
+&:hover .check {
+  transition: 1s;
+  transform: rotate(360deg);
+}
 
 }
+

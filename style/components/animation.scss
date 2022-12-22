@@ -1,16 +1,16 @@
-.menu-container {
-    opacity: 0;
-    animation: btnanimate 1s ease-in-out forwards;
-    transform: translateY(10px);
-}
-
-@keyframes btnanimate {
-    0% {
-        opacity: 0;
-        transform: translateY(60px);
+@media screen and (min-width: 768px) {
+  .menu-box {
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari et Chrome */
+    -o-animation: fadein 2s; /* Opera */
+  }
+  @keyframes fadein {
+    from {
+      opacity: 0;
     }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
+    to {
+      opacity: 1;
     }
+  }
 }

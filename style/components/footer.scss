@@ -6,6 +6,8 @@ footer {
   background-color: #353535;
 
   .footer-logo {
+    left: 0;
+    top: 0;
     padding: 10px;
     padding-left: 20px;
     width: 20%;
@@ -27,5 +29,20 @@ footer {
   a {
     text-decoration: none;
     color: #FFF;
+  }
+}
+
+@media screen and (min-width: 768px)  {
+
+.footer-logo {
+  padding-top: 10px;
+}
+
+  footer ul {
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    flex-direction: row;
   }
 }

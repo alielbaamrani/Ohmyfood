@@ -1,3 +1,7 @@
+/*  * {
+  border: solid 1px red;
+} */
+ 
 .search {
   padding: 10px;
   display: flex;
@@ -38,7 +42,7 @@
 }
 
 .btn {
-  background: linear-gradient(#FF79DA , #9356DC );
+  background: linear-gradient($color-secondary, $color-primary);
   color: #fff;
   font-size: 20px;
   border-radius: 50px;
@@ -59,6 +63,7 @@
   align-items: center;
 
   .btn-slide {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,18 +81,43 @@
     &:hover {
       background-color: #8d72af50;
       i {
-        color: #9356dc;
-
+        color: $color-primary;
       }
     }
-
+  }
+  .btn-slide::before {
+    content: attr(count);
+    width: 20px;
+    height: 20px;
+    background-color: $color-primary;
+    border-radius: 50%;
+    position: absolute;
+    left: -10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
+@media screen and (min-width: 768px)  {
+
+  .slide {
+    height: 150px;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+ .slide  .btn-slide {
+  margin-left: 20px;
+    width: 18rem;
+  }
+  }
+
 
 .restaurants {
   padding-top: 15px;
   background-color: #f7f7f7;
   height: 100%;
+  padding-bottom: 10%;
+
   .restaurant {
     display: flex;
     align-items: center;
@@ -96,3 +126,22 @@
   }
 }
 
+
+@media screen and (min-width: 768px) {
+
+
+
+  .restaurants {
+  .restaurant {
+    flex-direction: row;
+    flex-wrap: wrap;
+    .restaurant-card {
+      margin: 3%;
+      width: 40%;
+
+
+
+    }
+  }
+}
+}

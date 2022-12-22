@@ -1,11 +1,35 @@
 nav {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px 0;
-  
-    img {
-      width: 70%;
-    }
+  padding: 7px;
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 15rem;
   }
+}
+.navlogo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    display: flex;
+  }
+}
+
+.navhome {
+  padding: 10px;
+  justify-content: center;
+}
+
+.navmenu {
+  justify-content: center;
+  img {
+    padding-left: 0%;
+  }
+  .back {
+    color: black;
+    font-size: 2rem;
+    left: 0;
+  }
+}

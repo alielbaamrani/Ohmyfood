@@ -18,6 +18,7 @@
     object-fit: cover;
   }
 
+
   .restaurant-desc {
     display: flex;
     padding: 10px;
@@ -26,17 +27,33 @@
     border-radius: 0 0 20px 20px;
     justify-content: space-between;
 
-    .like {
-      width: 20px;
-      filter: invert(37%) sepia(86%) saturate(814%) hue-rotate(234deg) brightness(92%) contrast(87%);
-      }
-    }
-
     .desc-text {
       h4 {
         padding: 0;
         margin: 0;
       }
     }
+    .like {
+      padding-right: 17%;
+    }
   }
+}
 
+
+.new {
+  position: relative;
+}
+
+.new::before {
+  content: "nouveau";
+  position: absolute;
+  height: 2rem;
+  width: 5rem;
+  background-color: $color-tertiaire;
+  color: darken($color: $color-tertiaire, $amount: 50%);
+  display: grid;
+  place-items: center;
+  top: 1rem;
+  right: 1rem;
+
+}

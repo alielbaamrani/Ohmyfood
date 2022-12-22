@@ -5,13 +5,14 @@
     height: 250px;
   }
 }
+
 .menu {
   position: relative;
   width: 100%;
   background-color: #e7e7e7;
   border-radius: 30px 30px 0 0;
   z-index: 1;
-  margin-top: -12%;
+  margin-top: -80px;
 
   h2 {
     text-decoration: underline rgb(0, 204, 255);
@@ -21,6 +22,7 @@
   .menu-list {
     padding-left: 10px;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     img {
       width: 20px;
@@ -29,21 +31,52 @@
     h1 {
       font-family: "Shrikhand", cursive;
     }
+    .like {
+      padding-right: 4rem;
+      padding-bottom: 2rem;
+    }
   }
   .order {
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;
   }
 
   .btn-order {
-    background: linear-gradient(#FF79DA , #9356DC );
+    background: linear-gradient($color-secondary, $color-primary);
     color: #fff;
     font-size: 20px;
     border-radius: 50px;
     border: none;
-    padding: 15px 40px ;
-    margin: 20px;
+    padding: 15px 40px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-  }
+ }
 }
+
+@media screen and (min-width: 768px)  {
+
+.menu-list {
+  h1 {
+    text-align: center;
+}
+}
+}
+
+
+
+@media screen and (min-width: 1024px)  {
+
+  .menu-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu-container {
+    font-size: 15px;
+    padding-left: 10px;
+    width: 100%;
+  }
+  }

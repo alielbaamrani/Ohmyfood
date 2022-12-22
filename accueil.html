@@ -20,7 +20,8 @@
     ></script>
   </head>
   <body>
-    <nav>
+    <div class="loading"> <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div> </div>
+    <nav class="navhome">
       <img src="/images/logo/ohmyfood.png" alt="logo" />
     </nav>
     <div class="search">
@@ -37,14 +38,14 @@
     <div class="fonctionnement">
       <h2 class="title">fonctionnement</h2>
       <div class="slide">
-        <button class="btn-slide">
+        <button count="1" class="btn-slide">
           <i class="fa-solid fa-mobile-screen-button"></i> Choisissez un
           restaurant
         </button>
-        <button class="btn-slide">
+        <button count="2" class="btn-slide">
           <i class="fa-solid fa-list-ul"></i> Composez votre menu
         </button>
-        <button class="btn-slide">
+        <button count="3" class="btn-slide">
           <i class="fa-sharp fa-solid fa-store"></i> dégustez au restaurant
         </button>
       </div>
@@ -53,7 +54,7 @@
     <div class="restaurants">
       <h2 class="title">Restaurants</h2>
       <div class="restaurant">
-        <div class="restaurant-card">
+        <div class="restaurant-card new">
           <a href="./menu/la_palette_du_gout.html">
             <img
               class="restaurant-img"
@@ -66,14 +67,13 @@
               <h4>La palette du gout</h4>
               <p>Ménilmontant</p>
             </div>
-            <img
-              class="like"
-              src="/images/logo/heart-svgrepo-com.svg"
-              alt="coeur"
-            />
+            <div class="like">
+              <i class="fa-regular fa-heart like-regular"></i>
+              <i class="fa-solid fa-heart like-solid"></i>
+            </div>
           </div>
         </div>
-        <div class="restaurant-card">
+        <div class="restaurant-card new">
           <a href="/menu/la_note_enchantée.html">
             <img
               class="restaurant-img"
@@ -86,14 +86,13 @@
               <h4>La note enchantée</h4>
               <p>Charonne</p>
             </div>
-            <img
-              class="like"
-              src="/images/logo/heart-svgrepo-com.svg"
-              alt="coeur"
-            />
+            <div class="like">
+              <i class="fa-regular fa-heart like-regular"></i>
+              <i class="fa-solid fa-heart like-solid"></i>
+            </div>
           </div>
         </div>
-        <div class="restaurant-card">
+        <div class="restaurant-card new">
           <a href="/menu/francaise.html">
             <img
               class="restaurant-img"
@@ -106,14 +105,13 @@
               <h4>A la francaise</h4>
               <p>Charonne</p>
             </div>
-            <img
-              class="like"
-              src="/images/logo/heart-svgrepo-com.svg"
-              alt="coeur"
-            />
+            <div class="like">
+              <i class="fa-regular fa-heart like-regular"></i>
+              <i class="fa-solid fa-heart like-solid"></i>
+            </div>
           </div>
         </div>
-        <div class="restaurant-card">
+        <div class="restaurant-card new">
           <a href="/menu/Le_delice_des_sens.html">
             <img
               class="restaurant-img"
@@ -126,11 +124,10 @@
               <h4>Le delice des sens</h4>
               <p>Folie-Méricourt</p>
             </div>
-            <img
-              class="like"
-              src="/images/logo/heart-svgrepo-com.svg"
-              alt="coeur"
-            />
+            <div class="like">
+              <i class="fa-regular fa-heart like-regular"></i>
+              <i class="fa-solid fa-heart like-solid"></i>
+            </div>
           </div>
         </div>
       </div>
