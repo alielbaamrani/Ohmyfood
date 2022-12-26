@@ -4,17 +4,23 @@
   display: flex;
   background-color: #fff;
   border-radius: 20px;
-  text-overflow: ellipsis;
-
 
   .title-menu {
+    display: block;
+    width: 100px;
     flex: 1;
     padding: 10px;
   }
   h3,
   p {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    display: block;
+    overflow: hidden;
     margin: 0;
   }
+
 
   .prix {
     display: flex;
@@ -30,21 +36,18 @@
     width: 4rem;
     margin: 0rem -4rem 0rem 0rem;
     background-color: $color-tertiaire;
-    transition:  1s;
-
+    transition: 1s;
   }
-&:hover .menu-btn-check {
-  margin: 0rem 0rem 0rem 0rem;
-}
-.check {
-  font-size: 1.5rem;
-  color: #FFF;
-}
+  &:hover .menu-btn-check {
+    margin: 0rem 0rem 0rem 0rem;
+  }
+  .check {
+    font-size: 1.5rem;
+    color: #fff;
+  }
 
-&:hover .check {
-  transition: 1s;
-  transform: rotate(360deg);
+  &:hover .check {
+    transition: 1s;
+    transform: rotate(360deg);
+  }
 }
-
-}
-

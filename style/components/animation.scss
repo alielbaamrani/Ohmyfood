@@ -1,16 +1,19 @@
-@media screen and (min-width: 768px) {
-  .menu-box {
-    animation: fadein 2s;
-    -moz-animation: fadein 2s; /* Firefox */
-    -webkit-animation: fadein 2s; /* Safari et Chrome */
-    -o-animation: fadein 2s; /* Opera */
+@mixin cascade-delay {
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      animation-delay: 500ms * $i;
+    }
   }
-  @keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 }

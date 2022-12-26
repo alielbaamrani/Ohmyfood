@@ -15,8 +15,20 @@
   margin-top: -80px;
 
   h2 {
-    text-decoration: underline rgb(0, 204, 255);
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
     padding-left: 10px;
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -10px;
+      left: 10px;
+      width: 50%;
+      height: 3px;
+      background-color: $color-tertiaire;
+    }
   }
 
   .menu-list {
@@ -24,18 +36,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
     img {
       width: 20px;
       padding-right: 15px;
     }
+
     h1 {
       font-family: "Shrikhand", cursive;
     }
+
     .like {
       padding-right: 4rem;
       padding-bottom: 2rem;
     }
   }
+
+  .menu-box {
+    .menu-container {
+      @include cascade-delay;
+      animation: fadeIn 0.5s both;
+    }
+  }
+
   .order {
     position: relative;
     display: flex;
@@ -52,22 +75,18 @@
     border: none;
     padding: 15px 40px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
- }
+  }
 }
 
-@media screen and (min-width: 768px)  {
-
-.menu-list {
-  h1 {
-    text-align: center;
+@media screen and (min-width: 768px) {
+  .menu-list {
+    h1 {
+      text-align: center;
+    }
+  }
 }
-}
-}
 
-
-
-@media screen and (min-width: 1024px)  {
-
+@media screen and (min-width: 1024px) {
   .menu-box {
     display: flex;
     flex-direction: row;
@@ -79,4 +98,4 @@
     padding-left: 10px;
     width: 100%;
   }
-  }
+}

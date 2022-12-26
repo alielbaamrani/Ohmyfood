@@ -1,14 +1,6 @@
 @import "global.scss";
 @import "variable/couleur.scss";
 
-
-/* Pages */
-
-@import "pages/accueil.scss";
-@import "pages/menu.scss";
-
-
-
 /* components */
 @import "components/animation.scss";
 @import "components/like.scss";
@@ -17,5 +9,15 @@
 @import "components/footer.scss";
 @import "components/menu-btn.scss";
 @import "components/spinner.scss";
+
+
+
+
+/* Pages */
+
+@import "pages/accueil.scss";
+@import "pages/menu.scss";
+
+
 
 
