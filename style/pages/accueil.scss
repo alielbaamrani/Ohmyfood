@@ -1,7 +1,7 @@
 /*  * {
   border: solid 1px red;
 } */
- 
+
 .search {
   padding: 10px;
   display: flex;
@@ -42,6 +42,7 @@
 }
 
 .btn {
+  text-decoration: none;
   background: linear-gradient($color-secondary, $color-primary);
   color: #fff;
   font-size: 20px;
@@ -86,7 +87,7 @@
     }
   }
   .btn-slide::before {
-    content: attr(count);
+    content: attr(value);
     width: 20px;
     height: 20px;
     background-color: $color-primary;
@@ -98,19 +99,17 @@
     align-items: center;
   }
 }
-@media screen and (min-width: 768px)  {
-
+@media screen and (min-width: 768px) {
   .slide {
     height: 150px;
     justify-content: space-around;
     flex-direction: row;
   }
- .slide  .btn-slide {
-  margin-left: 20px;
+  .slide .btn-slide {
+    margin-left: 20px;
     width: 18rem;
   }
-  }
-
+}
 
 .restaurants {
   padding-top: 15px;
@@ -126,22 +125,15 @@
   }
 }
 
-
 @media screen and (min-width: 768px) {
-
-
-
   .restaurants {
-  .restaurant {
-    flex-direction: row;
-    flex-wrap: wrap;
-    .restaurant-card {
-      margin: 3%;
-      width: 40%;
-
-
-
+    .restaurant {
+      flex-direction: row;
+      flex-wrap: wrap;
+      .restaurant-card {
+        margin: 3%;
+        width: 40%;
+      }
     }
   }
-}
 }

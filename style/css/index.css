@@ -40,11 +40,10 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   opacity: 0;
-  background-image: linear-gradient(#ff79da, #9356dc);
+  background-image: linear-gradient(#FF79DA, #9356DC);
   transition: opacity 0.5s ease-in-out;
 }
-.like-solid:hover,
-.like-solid .like-solid {
+.like-solid:hover, .like-solid .like-solid {
   opacity: 1;
 }
 
@@ -91,7 +90,7 @@ body {
   position: absolute;
   height: 2rem;
   width: 5rem;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   color: #1b6150;
   display: grid;
   place-items: center;
@@ -148,8 +147,7 @@ footer .footer-logo {
   padding: 10px;
   padding-left: 20px;
   width: 20%;
-  filter: invert(100%) sepia(8%) saturate(4%) hue-rotate(237deg) brightness(99%)
-    contrast(104%);
+  filter: invert(100%) sepia(8%) saturate(4%) hue-rotate(237deg) brightness(99%) contrast(104%);
 }
 footer ul {
   padding-left: 20px;
@@ -165,7 +163,7 @@ footer li i {
 }
 footer a {
   text-decoration: none;
-  color: #fff;
+  color: #FFF;
 }
 
 @media screen and (min-width: 768px) {
@@ -215,7 +213,7 @@ footer a {
   display: flex;
   width: 4rem;
   margin: 0rem -4rem 0rem 0rem;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   transition: 1s;
 }
 .menu-btn:hover .menu-btn-check {
@@ -268,30 +266,30 @@ footer a {
   width: 13px;
   height: 13px;
   border-radius: 50%;
-  background: #9356dc;
+  background: #9356DC;
   animation-timing-function: cubic-bezier(0, 1, 1, 0);
 }
 
 .lds-ellipsis div:nth-child(1) {
-  background-color: #ff79da;
+  background-color: #FF79DA;
   left: 8px;
   animation: lds-ellipsis1 0.6s infinite;
 }
 
 .lds-ellipsis div:nth-child(2) {
-  background-color: #99e2d0;
+  background-color: #99E2D0;
   left: 8px;
   animation: lds-ellipsis2 0.6s infinite;
 }
 
 .lds-ellipsis div:nth-child(3) {
-  background-color: #9356dc;
+  background-color: #9356DC;
   left: 32px;
   animation: lds-ellipsis2 0.6s infinite;
 }
 
 .lds-ellipsis div:nth-child(4) {
-  background-color: #ff79da;
+  background-color: #FF79DA;
   left: 56px;
   animation: lds-ellipsis3 0.6s infinite;
 }
@@ -361,7 +359,8 @@ footer a {
 }
 
 .btn {
-  background: linear-gradient(#ff79da, #9356dc);
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: #fff;
   font-size: 20px;
   border-radius: 50px;
@@ -403,13 +402,13 @@ footer a {
   background-color: rgba(141, 114, 175, 0.3137254902);
 }
 .slide .btn-slide:hover i {
-  color: #9356dc;
+  color: #9356DC;
 }
 .slide .btn-slide::before {
-  content: attr(count);
+  content: attr(value);
   width: 20px;
   height: 20px;
-  background-color: #9356dc;
+  background-color: #9356DC;
   border-radius: 50%;
   position: absolute;
   left: -10px;
@@ -480,7 +479,7 @@ footer a {
   left: 10px;
   width: 50%;
   height: 3px;
-  background-color: #99e2d0;
+  background-color: #99E2D0;
 }
 .menu .menu-list {
   padding-left: 10px;
@@ -522,7 +521,8 @@ footer a {
   padding: 20px;
 }
 .menu .btn-order {
-  background: linear-gradient(#ff79da, #9356dc);
+  text-decoration: none;
+  background: linear-gradient(#FF79DA, #9356DC);
   color: #fff;
   font-size: 20px;
   border-radius: 50px;
