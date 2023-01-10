@@ -73,7 +73,7 @@ body {
   border-radius: 0 0 20px 20px;
   justify-content: space-between;
 }
-.restaurant-card .restaurant-desc .desc-text h4 {
+.restaurant-card .restaurant-desc .desc-text h3 {
   padding: 0;
   margin: 0;
 }
@@ -107,19 +107,17 @@ nav img {
   width: 15rem;
 }
 
-.navlogo {
+.logo {
+  font-family: "Shrikhand", cursive;
   width: 100%;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-.navlogo img {
-  display: flex;
+  margin: 0;
 }
 
 .navhome {
   padding: 10px;
-  justify-content: center;
 }
 
 .navmenu {
@@ -323,7 +321,7 @@ footer a {
   border: solid 1px red;
 } */
 .search {
-  padding: 10px;
+  padding: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -331,7 +329,13 @@ footer a {
   font-size: 20px;
 }
 .search .location {
-  padding-right: 7%;
+  padding-right: 1%;
+}
+.search input {
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  background-color: #eaeaea;
 }
 
 .title {
@@ -339,7 +343,7 @@ footer a {
   font-weight: bold;
 }
 
-.header {
+.container {
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -347,12 +351,12 @@ footer a {
   justify-content: center;
   background-color: #f7f7f7;
 }
-.header h1 {
+.container h2 {
   font-size: 30px;
   text-align: center;
   margin: 10px;
 }
-.header p {
+.container p {
   font-size: 18px;
   text-align: center;
   margin: 10px;
@@ -369,6 +373,9 @@ footer a {
   margin: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
+.btn:hover {
+  box-shadow: rgb(149, 157, 165) 0px 16px 40px;
+}
 
 .fonctionnement {
   padding-bottom: 30px;
@@ -384,7 +391,7 @@ footer a {
 .slide .btn-slide {
   position: relative;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background-color: #e7e7e7;
   padding: 20px;
@@ -396,7 +403,7 @@ footer a {
   cursor: pointer;
 }
 .slide .btn-slide i {
-  padding-right: 50px;
+  padding-right: 15px;
 }
 .slide .btn-slide:hover {
   background-color: rgba(141, 114, 175, 0.3137254902);
@@ -409,6 +416,7 @@ footer a {
   width: 20px;
   height: 20px;
   background-color: #9356DC;
+  color: #FFF;
   border-radius: 50%;
   position: absolute;
   left: -10px;
@@ -528,6 +536,9 @@ footer a {
   border: none;
   padding: 15px 40px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.menu .btn-order:hover {
+  box-shadow: rgb(149, 157, 165) 0px 16px 40px;
 }
 
 @media screen and (min-width: 768px) {

@@ -3,7 +3,7 @@
 } */
 
 .search {
-  padding: 10px;
+  padding: 13px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,8 +11,15 @@
   font-size: 20px;
 
   .location {
-    padding-right: 7%;
+    padding-right: 1%;
   }
+
+ input {
+  text-align: center;
+  font-size: 1rem;
+  border: none;
+  background-color: #eaeaea;
+ }
 }
 
 .title {
@@ -20,7 +27,7 @@
   font-weight: bold;
 }
 
-.header {
+.container {
   height: 350px;
   display: flex;
   flex-direction: column;
@@ -28,7 +35,7 @@
   justify-content: center;
   background-color: #f7f7f7;
 
-  h1 {
+  h2 {
     font-size: 30px;
     text-align: center;
     margin: 10px;
@@ -51,6 +58,10 @@
   padding: 20px;
   margin: 20px;
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  &:hover {
+    box-shadow: rgba(149, 157, 165, 2) 0px 16px 40px;
+    
+  }
 }
 
 .fonctionnement {
@@ -66,7 +77,7 @@
   .btn-slide {
     position: relative;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #e7e7e7;
     padding: 20px;
@@ -77,7 +88,7 @@
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     cursor: pointer;
     i {
-      padding-right: 50px;
+      padding-right: 15px;
     }
     &:hover {
       background-color: #8d72af50;
@@ -91,6 +102,7 @@
     width: 20px;
     height: 20px;
     background-color: $color-primary;
+    color: #FFF;
     border-radius: 50%;
     position: absolute;
     left: -10px;

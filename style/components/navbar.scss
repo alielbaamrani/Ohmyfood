@@ -7,19 +7,17 @@ nav {
     width: 15rem;
   }
 }
-.navlogo {
+.logo {
+  font-family: "Shrikhand", cursive;
   width: 100%;
+  font-size: 3rem;
   display: flex;
   justify-content: center;
-  align-items: center;
-  img {
-    display: flex;
-  }
+  margin: 0;
 }
 
 .navhome {
   padding: 10px;
-  justify-content: center;
 }
 
 .navmenu {
